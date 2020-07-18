@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1931518622465702
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4808684888449078}
+  - component: {fileID: 135983102708988856}
+  - component: {fileID: 114793292473884408}
+  - component: {fileID: 114169357539975664}
+  m_Layer: 8
+  m_Name: Burst Bullet
+  m_TagString: Burst Bullet
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4808684888449078
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931518622465702}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.02, y: 2.21, z: 0.34}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_Children:
+  - {fileID: 55976659562055194}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &135983102708988856
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931518622465702}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114793292473884408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931518622465702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a0db1de52a1b0648bdc73cb20be2b37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0
+  hitEffect: {fileID: 1824051006881192, guid: bdc6c33f085627942a7020d120574d3b, type: 3}
+  isPenetrating: 0
+  bulletBuffs: []
+  trackedEnemy: {fileID: 0}
+  speed: 20
+  homingType: 0
+--- !u!114 &114169357539975664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931518622465702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2e89036879825f4f83fcefdcec908d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletType: HomingProjectile
+--- !u!1001 &6817628367664450442
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4808684888449078}
+    m_Modifications:
+    - target: {fileID: 6799250819409300880, guid: b5756e087e903744cba81b6f06e787cd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6799250819409300880, guid: b5756e087e903744cba81b6f06e787cd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6799250819409300880, guid: b5756e087e903744cba81b6f06e787cd,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6799250819409300880, guid: b5756e087e903744cba81b6f06e787cd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6799250819409300880, guid: b5756e087e903744cba81b6f06e787cd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6799250819409300880, guid: b5756e087e903744cba81b6f06e787cd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6799250819409300880, guid: b5756e087e903744cba81b6f06e787cd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6799250819409300880, guid: b5756e087e903744cba81b6f06e787cd,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6799250819409300880, guid: b5756e087e903744cba81b6f06e787cd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6799250819409300880, guid: b5756e087e903744cba81b6f06e787cd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6799250819409300880, guid: b5756e087e903744cba81b6f06e787cd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6799250819409300887, guid: b5756e087e903744cba81b6f06e787cd,
+        type: 3}
+      propertyPath: m_Name
+      value: Burst Particle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b5756e087e903744cba81b6f06e787cd, type: 3}
+--- !u!4 &55976659562055194 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6799250819409300880, guid: b5756e087e903744cba81b6f06e787cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 6817628367664450442}
+  m_PrefabAsset: {fileID: 0}
